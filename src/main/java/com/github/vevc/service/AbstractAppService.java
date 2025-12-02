@@ -52,7 +52,7 @@ public abstract class AbstractAppService {
     /**
      * clean workspace
      */
-    public abstract void clean();
+    protected abstract void clean();
 
     protected File initWorkDir() throws IOException {
         FileUtils.forceMkdir(WORK_DIR);
